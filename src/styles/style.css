@@ -37,7 +37,7 @@
 body {
   margin: 0;
 
-  overflow: hidden;
+  overflow-x: hidden;
 
   color: var(--dark);
   font-size: 16px;
@@ -75,11 +75,11 @@ section {
   margin: 0 auto;
 }
 
-.bg {
+.bg-pattern {
   position: relative;
 }
 
-.bg::before {
+.bg-pattern::before {
   position: absolute;
 
   width: 100%;
@@ -118,11 +118,6 @@ section {
   margin-top: 24px;
 }
 
-header {
-  width: 100vw;
-  height: 100vh;
-}
-
 .header-content {
   position: relative;
 
@@ -155,4 +150,38 @@ header {
 
 .column {
   width: 540px;
+}
+
+.video-content {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.video-title,
+.video-text {
+  margin-bottom: 30px;
+}
+
+.video-title {
+  text-align: center;
+}
+
+.video-text {
+  margin-top: 0;
+}
+
+.video {
+  margin-bottom: -200px;
+
+  border: 0;
+  filter: drop-shadow(0 16px 32px rgb(0 0 0 / 15%));
+}
+
+.bottom {
+  min-height: 800px;
+
+  background-color: #000;
 }
