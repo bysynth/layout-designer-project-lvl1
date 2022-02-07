@@ -109,6 +109,14 @@ h3 {
   background-color: var(--brown);
 }
 
+.bg-white {
+  background-color: var(--white);
+}
+
+.bg-dark {
+  background-color: var(--dark);
+}
+
 .text-dark {
   color: var(--dark);
 }
@@ -207,10 +215,6 @@ h3 {
   filter: drop-shadow(0 16px 32px rgb(0 0 0 / 15%));
 }
 
-#navigation {
-  background-color: var(--dark);
-}
-
 .nav-list {
   display: flex;
   flex-wrap: wrap;
@@ -276,7 +280,7 @@ h3 {
   color: var(--white);
 }
 
-.section-content {
+.section-top {
   display: flex;
 
   column-gap: 30px;
@@ -286,28 +290,28 @@ h3 {
   flex-direction: row-reverse;
 }
 
-.section-content .image {
+.section-image {
   filter: drop-shadow(0 16px 32px rgb(0 0 0 / 15%));
 }
 
-.section-title {
+.section-header {
   font-family: Neucha, sans-serif;
 }
 
-.section-title .name {
+.section-header-name {
   margin: 0;
 
   color: var(--translucent-dark);
   font-size: 24px;
 }
 
-.section-title .title {
+.section-header-title {
   margin-bottom: 30px;
 
   color: var(--dark);
 }
 
-.section-title .desc {
+.section-header-desc {
   margin: 0;
 
   font-size: 34px;
@@ -328,15 +332,15 @@ h3 {
   background-color: var(--brown);
 }
 
-.bg-brown .section-title {
+.bg-brown .section-header {
   color: var(--white);
 }
 
-.bg-brown .section-title .title {
+.bg-brown .section-header-title {
   color: var(--white);
 }
 
-.bg-brown .section-title .name {
+.bg-brown .section-header-name {
   color: var(--translucent-white);
 }
 
@@ -348,4 +352,71 @@ h3 {
 
 .bg-brown .columns {
   color: var(--white);
+}
+
+.footer-content {
+  align-items: center;
+  min-height: 190px;
+  padding: 0 55px;
+
+  color: var(--white);
+
+  background-color: var(--primary-dark);
+}
+
+.footer-content .column {
+  width: 485px;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 9px;
+
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.form-input-block {
+  display: flex;
+}
+
+.form-input {
+  width: 100%;
+  height: 50px;
+  padding: 15px;
+
+  font-family: inherit;
+
+  border: none;
+}
+
+.btn-submit {
+  position: relative;
+
+  width: 70px;
+  height: 50px;
+
+  border: none;
+}
+
+.btn-submit::before {
+  display: block;
+  width: 24px;
+  height: 24px;
+
+  background-image: url("../assets/images/send.svg");
+  background-repeat: no-repeat;
+
+  content: "";
+}
+
+.subscribe-text {
+  font-size: 12px;
+}
+
+.contacts {
+  margin-top: 60px;
+
+  font-size: 14px;
+  text-align: center;
 }
